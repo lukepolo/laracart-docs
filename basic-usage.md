@@ -1,4 +1,4 @@
-# Basic Usage _ TEST SUB MODULE MORE TEST AND MORE TEST
+# Basic Usage
 
 <a name="adding"></a>
 ## Adding Items
