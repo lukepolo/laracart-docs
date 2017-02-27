@@ -16,6 +16,14 @@ What makes LaraCart unique is it what it includes out of the box :
 - Item Model Relation at a global and item level
 - Quickly insert items with your own item models
 
+## Laravel compatibility
+
+| Laravel       | LaraCart    |
+| ------------- |-------------|
+| 5.1 - 5.3     | 1.1.*       |
+| 5.4           | 1.2.*       |
+
+
 ## Installation
 Edit your project's composer.json file by adding:
 
