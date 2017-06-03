@@ -1,5 +1,6 @@
 # Getting Started
  
+<a name="overview"></a>
 ## Overview
 LaraCart was built to be a easy , fast , and simple solution for cart based systems.
 
@@ -23,7 +24,7 @@ What makes LaraCart unique is it what it includes out of the box :
 | 5.1 - 5.3     | 1.1.*       |
 | 5.4           | 1.2.*       |
 
-
+<a name="installation"></a>
 ## Installation
 Edit your project's composer.json file by adding:
 
@@ -48,6 +49,7 @@ Publish vendor config and migration :
     
 Look through the configuration options and change as needed.
 
+<a name="configuration"></a>
 ##Configuration
 LaraCart has a lot of configuration options, please make sure you run :
 

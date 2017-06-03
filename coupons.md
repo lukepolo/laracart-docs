@@ -29,8 +29,8 @@ should be used within your coupon classes
 
 > {alert} Take a look at <a href="#custom-coupons">Custom Coupons</a> to see how to use these in your coupon
 
-<a name="implantation"></a>
-## Coupon Implantation
+<a name="implemention"></a>
+## Coupon Implemention
     
     $coupon = new \LukePOLO\LaraCart\Coupons\Fixed($coupon->CouponCode, $coupon->CouponValue, [
         'description' => $coupon->Description
