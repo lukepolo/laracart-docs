@@ -12,7 +12,7 @@
 - #### Coupons & Fees
     - [Coupon Overview](/{{version}}/coupons#overview)
     - [Coupon Helpers](/{{version}}/coupons#helpers)
-    - [Coupon Implantation](/{{version}}/coupons#implantation)
+    - [Coupon Implementation](/{{version}}/coupons#implementation)
     - [Custom Coupons](/{{version}}/coupons#custom)
     - [Fees](/{{version}}/coupons#fees)
 - #### Cart API
