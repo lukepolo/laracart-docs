@@ -49,6 +49,10 @@
     
     // no need to call save or anything, we do that for you!
     $item->size = 'L';
+    
+    // we can also enable and disable the item
+    $item->disable();
+    $item->enable();
 
 <a name="removing"></a>
 ## Removing Items

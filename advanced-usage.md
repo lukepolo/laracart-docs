@@ -10,11 +10,12 @@ The reasoning behind sub items is to allow you add additional items without the 
 
     $item->addSubItem([
         'description' => 'Extra Cloth Cost', // this line is not required!
-        'price' => 3.00
+        'price' => 3.00,
+        'qty' => 2
     ]);
 
-    $item->subTotal(); // $18.99
-    $item->subItemsTotal($formatMoney = true); // $3.00
+    $item->subTotal(); // $23.53
+    $item->subItemsTotal($formatMoney = true); // $6.00
 
 <a name="item-model-bindings"></a>
 ## Item Model Binding
