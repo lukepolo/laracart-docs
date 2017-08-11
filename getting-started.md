@@ -22,7 +22,7 @@ What makes LaraCart unique is it what it includes out of the box :
 | Laravel       | LaraCart    |
 | ------------- |-------------|
 | 5.1 - 5.3     | 1.1.*       |
-| 5.4           | 1.2.*       |
+| 5.4+          | 1.3.*       |
 
 <a name="installation"></a>
 ## Installation
@@ -31,11 +31,11 @@ Edit your project's composer.json file by adding:
     {
         "require": {
             ...
-            "lukepolo/laracart": "1.1.*"
+            "lukepolo/laracart": "1.3.*"
         }
     }
 
-Include Service Providers / Facade in app/config/app.php :
+If using Laravel 5.4 please include the service providers / facade in app/config/app.php :
 
     LukePOLO\LaraCart\LaraCartServiceProvider::class
 
