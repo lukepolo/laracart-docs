@@ -25,7 +25,7 @@ should be used within your coupon classes
     $this->checkValidTimes(Carbon $startDate, Carbon $endDate, $throwErrors = true)
     
     // Sets a discount to an item with what code was used and the discount amount
-    $this->setDiscountOnItem(CartItem $item, $discountAmount)</code></pre>
+    $this->setDiscountOnItem(CartItem $item, $discountAmount)
 
 > {alert} Take a look at <a href="#custom-coupons">Custom Coupons</a> to see how to use these in your coupon
 
