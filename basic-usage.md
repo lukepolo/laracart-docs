@@ -79,4 +79,4 @@ To remove an item from the cart, you need to get its item hash.
 <a name="prices"></a>
 ## Item Prices
 
-    $item->price($formatted = true); // $4.50 | USD 4.50
+    $item->price($formatted = true, $taxedItemsOnly = false, $withTax = false); // $4.50 | USD 4.50
