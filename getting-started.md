@@ -21,7 +21,7 @@ What makes LaraCart unique is what it includes out of the box:
 
 | Laravel           | laracart   |
 | :---------------- | :--------- |
-| 5.1 \| 5.2 \| 5.3 | 1.1 \/ 1.2 |
+| 5.1 \| 5.2 \| 5.3 | 1.1 \| 1.2 |
 | 5.4 \/ 5.5        | 1.3.\*     |
 | 5.6+              | 1.4.\*     |
 
