@@ -45,7 +45,7 @@ Include the Facade:
 
 Publish vendor config and migration:
 
-    php artisan vendor:publish --provider=LukePOLO\LaraCart\LaraCartServiceProvider
+    php artisan vendor:publish --provider="LukePOLO\LaraCart\LaraCartServiceProvider"
     
 Look through the configuration options and change as needed.
 
@@ -53,6 +53,6 @@ Look through the configuration options and change as needed.
 ##Configuration
 LaraCart has a lot of configuration options, please make sure you run:
 
-    php artisan vendor:publish --provider=LukePOLO\LaraCart\LaraCartServiceProvider
+    php artisan vendor:publish --provider="LukePOLO\LaraCart\LaraCartServiceProvider"
     
 After please make sure you go through and customize for your needs
