@@ -24,6 +24,12 @@ What makes LaraCart unique is what it includes out of the box:
 | 5.1 \| 5.2 \| 5.3 | 1.1 \| 1.2 |
 | 5.4+              | 1.3+       |
 
+## PHP compatibility
+| PHP | laracart |
+|:----|:---------|
+| 7   | 1.*      |
+| 8+  | 2.1+     |
+
 <a name="installation"></a>
 ## Installation
 Edit your project's composer.json file by adding:
@@ -31,7 +37,7 @@ Edit your project's composer.json file by adding:
     {
         "require": {
             ...
-            "lukepolo/laracart": "1.4.*"
+            "lukepolo/laracart": "2.1.*"
         }
     }
 
