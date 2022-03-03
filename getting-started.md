@@ -28,8 +28,7 @@ What makes LaraCart unique is what it includes out of the box:
 | PHP | laracart |
 |:----|:---------|
 | 7   | 1.*      |
-| 8   | 2.1      |
-| 9+  | 2.2+     |
+| 8   | 2.1+      |
 
 <a name="installation"></a>
 ## Installation
