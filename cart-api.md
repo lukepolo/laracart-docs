@@ -28,7 +28,7 @@ Instances is a way that we can use multiple carts within the same session. Each 
 ## Totals
     
     LaraCart::subTotal($format = true, $withDiscount = true);
-    LaraCart::totalDiscount($formatted = false);
+    LaraCart::discountTotal($formatted = false);
     LaraCart::taxTotal($formatted = false);
     LaraCart::total($formatted = false, $withDiscount = true);
     

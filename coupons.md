@@ -6,8 +6,8 @@ Adding coupons could never be easier, currently there are a set of coupons insid
 
 Coupon Type | Description
 --- | --- | ---
-Fixed Amount | Takes a fixed amount off the carts sub total | LukePOLO\LaraCart\Coupons\Fixed
-Percentage | Takes a percentage off of the carts sub total | LukePOLO\LaraCart\Coupons\Percentage
+Fixed Amount | Takes a fixed amount off the carts subtotal | LukePOLO\LaraCart\Coupons\Fixed
+Percentage | Takes a percentage off of the carts subtotal | LukePOLO\LaraCart\Coupons\Percentage
 
 <a name="helpers"></a>
 ## Coupon Helpers
@@ -30,7 +30,7 @@ should be used within your coupon classes
 > {alert} Take a look at <a href="#custom-coupons">Custom Coupons</a> to see how to use these in your coupon
 
 <a name="implemention"></a>
-## Coupon Implemention
+## Coupon Implementation
     
     $coupon = new \LukePOLO\LaraCart\Coupons\Fixed($coupon->CouponCode, $coupon->CouponValue, [
         'description' => $coupon->Description
@@ -103,7 +103,7 @@ To create a custom coupon to fit your needs its pretty simple, first create a ne
         }
     }
     
-Once you done this , you can easily use your coupon :
+Once you've done this , you can easily use your coupon :
     
     $coupon = new App\MyCustomCoupon('10%OFF', '.10', [
         'description' => '10 % Off Any Purchase!'
@@ -115,3 +115,5 @@ Fees allow you to add extra charges to the cart for various reasons like deliver
     
     LaraCart::addFee('deliveryFee', 5, $taxable =  false, $options = []);
     LaraCart::removeFee('deliveryFee');
+
+
