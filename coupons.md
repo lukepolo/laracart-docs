@@ -1,15 +1,18 @@
-#Coupons 
+#Coupons
 
 <a name="overview"></a>
+
 ## Overview
+
 Adding coupons could never be easier, currently there are a set of coupons inside LaraCart coupon folder. To create new types of coupons just create a copy of one of the existing coupons and modify it!
 
-Coupon Type | Description
---- | --- | ---
-Fixed Amount | Takes a fixed amount off the carts subtotal | LukePOLO\LaraCart\Coupons\Fixed
-Percentage | Takes a percentage off of the carts subtotal | LukePOLO\LaraCart\Coupons\Percentage
+| Coupon Type  | Description                                  |
+| ------------ | -------------------------------------------- | ------------------------------------ |
+| Fixed Amount | Takes a fixed amount off the carts subtotal  | LukePOLO\LaraCart\Coupons\Fixed      |
+| Percentage   | Takes a percentage off of the carts subtotal | LukePOLO\LaraCart\Coupons\Percentage |
 
 <a name="helpers"></a>
+
 ## Coupon Helpers
 
 The coupons include a `CouponTrait` that has some helpers, in which these
@@ -17,44 +20,47 @@ should be used within your coupon classes
 
     // Checks the minimum subtotal needed to apply the coupon
     $this->checkMinAmount($minAmount, $throwErrors = true)
-    
+
     // Returns either the max discount or the discount applied based on what is passed through
     $this->maxDiscount($maxDiscount, $discount, $throwErrors = true)
-    
+
     // Checks to see if the times are valid for the coupon
     $this->checkValidTimes(Carbon $startDate, Carbon $endDate, $throwErrors = true)
-    
+
     // Sets a discount on a item
     $this->setDiscountOnItem(CartItem $item)
 
 > {alert} Take a look at <a href="#custom-coupons">Custom Coupons</a> to see how to use these in your coupon
 
 <a name="implemention"></a>
+
 ## Coupon Implementation
-    
+
     $coupon = new \LukePOLO\LaraCart\Coupons\Fixed($coupon->CouponCode, $coupon->CouponValue, [
         'description' => $coupon->Description
     ]);
-    
+
     LaraCart::addCoupon($coupon);
     LaraCart::removeCoupon($couponCode);
     LaraCart::removeCoupons();
-    
+
     $fixedCoupon->getValue(); // $2.50
     $percentCoupon->getValue; // 15%
-    
+
     $fixedCoupon->canApply(); // true or false
     $fixedCoupon->getFailedMessage(); // ex : 'you must have $10 in the cart!'
-    
+
 <a name="custom"></a>
+
 ## Custom Coupons
+
 To create a custom coupon to fit your needs its pretty simple, first create a new file with these three functions :
-    
+
     namespace App\Coupons;
-    
+
     use LukePOLO\LaraCart\Contracts\CouponContract;
     use LukePOLO\LaraCart\Traits\CouponTrait;
-    
+
     /**
      * Class MyCustomCoupon
      *
@@ -63,7 +69,7 @@ To create a custom coupon to fit your needs its pretty simple, first create a ne
     class MyCustomCoupon implements CouponContract
     {
         use CouponTrait;
-    
+
         /**
          * @param $code
          * @param $value
@@ -72,11 +78,11 @@ To create a custom coupon to fit your needs its pretty simple, first create a ne
         {
             $this->code = $code;
             $this->value = $value / 100;
-    
+
             // this allows you to access your variables via $this->$option
             $this->setOptions($options);
         }
-    
+
          /**
          * Gets the discount amount
          *
@@ -91,7 +97,7 @@ To create a custom coupon to fit your needs its pretty simple, first create a ne
             $this->checkMinAmount($this->minAmount, $throwErrors)
             return \LaraCart::subTotal(false) * $this->value;
         }
-    
+
         /**
          * Displays the type of value it is for the user
          *
@@ -102,18 +108,18 @@ To create a custom coupon to fit your needs its pretty simple, first create a ne
             return \LaraCart::formatMoney($this->value, $locale, $internationalFormat);
         }
     }
-    
+
 Once you've done this , you can easily use your coupon :
-    
+
     $coupon = new App\MyCustomCoupon('10%OFF', '.10', [
         'description' => '10 % Off Any Purchase!'
     ]);
-    
+
 <a name="fees"></a>
+
 ## Fees
+
 Fees allow you to add extra charges to the cart for various reasons like delivery fees, service charges or any other fee that you require.
-    
+
     LaraCart::addFee('deliveryFee', 5, $taxable =  false, $options = []);
     LaraCart::removeFee('deliveryFee');
-
-
