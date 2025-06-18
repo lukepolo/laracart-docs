@@ -19,10 +19,14 @@ What makes LaraCart unique is what it includes out of the box:
 
 ## Installation
 
-    composer require lukepolo/laracart
+```bash
+composer require lukepolo/laracart
+```
 
 Publish vendor config and migration:
 
-    php artisan vendor:publish --provider="LukePOLO\LaraCart\LaraCartServiceProvider
+```bash
+php artisan vendor:publish --provider="LukePOLO\LaraCart\LaraCartServiceProvider
+```
 
 Look through the configuration options and change as needed.
