@@ -1,7 +1,5 @@
 # Getting Started
 
-<a name="overview"></a>
-
 ## Overview
 
 LaraCart was built to be an easy, fast, and simple solution for cart based systems.
@@ -18,8 +16,6 @@ What makes LaraCart unique is what it includes out of the box:
 - Totals of all items within the item chains
 - Item Model Relation at a global and item level
 - Quickly insert items with your own item models
-
-<a name="installation"></a>
 
 ## Installation
 
